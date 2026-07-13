@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-ink: #16233F;
+  --color-ink-2: #1F3157;
+  --color-midnight: #0B1526;
+  --color-parchment: #F8F4EA;
+  --color-parchment-dim: #EFE7D6;
+  --color-parchment-line: #E2D8C2;
+  --color-brass: #B8863E;
+  --color-brass-light: #DDAE63;
+  --color-brass-dark: #8C6428;
+  --color-slate: #4A5470;
+  --color-mist: #9FACC9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+}
+
+.cae-needle {
+  animation: cae-settle 5s ease-in-out infinite;
+}
+
+@keyframes cae-settle {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
