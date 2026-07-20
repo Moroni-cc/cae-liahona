@@ -1,4 +1,4 @@
-import { CompassMark } from "../components/Compass";
+import { Logo } from "../components/Logo";
 import { Button, Eyebrow, SectionHeading, Stat } from "../components/ui";
 
 const team = [
@@ -39,7 +39,7 @@ export default function About() {
             </div>
           </div>
           <div className="flex aspect-square items-center justify-center rounded-2xl border border-parchment-line bg-white/60">
-            <CompassMark className="h-40 w-40 text-brass/50" />
+            <Logo className="h-40 w-40 text-brass/50" />
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function About() {
             {team.map((m) => (
               <div key={m.name} className="rounded-2xl border border-parchment-line bg-white/70 p-8 text-center">
                 <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-ink/5">
-                  <CompassMark className="h-10 w-10 text-brass-dark" />
+                  <Logo className="h-10 w-10 text-brass-dark" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-medium text-ink">{m.name}</h3>
                 <p className="text-xs font-mono uppercase tracking-wide text-brass-dark">{m.role}</p>

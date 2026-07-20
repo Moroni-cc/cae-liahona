@@ -1,4 +1,4 @@
-import { CompassMark } from "../components/Compass";
+import { Logo } from "../components/Logo";
 import { Newsletter } from "../components/Newsletter";
 import { Button, Eyebrow, SectionHeading, Stars } from "../components/ui";
 
@@ -83,8 +83,8 @@ export default function Home() {
           </div>
 
           <div className="relative mx-auto flex h-72 w-72 items-center justify-center sm:h-96 sm:w-96">
-            <div className="absolute inset-0 rounded-full bg-brass/10 blur-2xl" />
-            <CompassMark className="relative h-full w-full text-brass-light" />
+            <div className="absolute inset-0 rounded-full bg-brass/40 blur-3xl" />
+            <Logo className="relative h-full w-full text-brass-light" />
           </div>
         </div>
       </section>
@@ -127,9 +127,8 @@ export default function Home() {
       {benefits.map((benefit, i) => (
         <section key={benefit.title} className={i % 2 === 0 ? "bg-parchment" : "bg-parchment-dim"}>
           <div
-            className={`mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 ${
-              i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
-            }`}
+            className={`mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+              }`}
           >
             <div>
               <Eyebrow tone="dark" bearing={`Punto ${i + 1}`}>
@@ -145,8 +144,8 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="flex aspect-[4/3] items-center justify-center rounded-2xl border border-parchment-line bg-white/60">
-              <CompassMark className="h-24 w-24 text-brass/40" />
+            <div className="flex aspect-4/3 items-center justify-center rounded-2xl border border-parchment-line bg-white/60">
+              <Logo className="h-24 w-24 text-brass/40" />
             </div>
           </div>
         </section>

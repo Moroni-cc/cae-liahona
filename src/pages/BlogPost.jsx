@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { CompassMark } from "../components/Compass";
+import { Logo } from "../components/Logo";
 import { posts } from "./Blog";
 import { Button, Eyebrow, Stars } from "../components/ui";
 
@@ -22,8 +22,8 @@ export default function BlogPost() {
       </section>
 
       <div className="mx-auto -mt-10 max-w-4xl px-6">
-        <div className="flex aspect-[16/7] items-center justify-center rounded-2xl border border-parchment-line bg-parchment-dim">
-          <CompassMark className="h-20 w-20 text-brass/40" />
+        <div className="flex aspect-16/7 items-center justify-center rounded-2xl border border-parchment-line bg-parchment-dim">
+          <Logo className="h-20 w-20 text-brass/40" />
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CompassMark } from "../components/Compass";
+import { Logo } from "../components/Logo";
 import { Newsletter } from "../components/Newsletter";
 import { Eyebrow, SectionHeading } from "../components/ui";
 
@@ -53,7 +53,7 @@ export default function Blog() {
                 className="group flex flex-col rounded-2xl border border-parchment-line bg-white/70 p-6 transition-colors hover:border-brass"
               >
                 <div className="flex aspect-video items-center justify-center rounded-xl bg-parchment-dim">
-                  <CompassMark className="h-12 w-12 text-brass/40" />
+                  <Logo className="h-12 w-12 text-brass/40" />
                 </div>
                 <p className="mt-5 font-mono text-xs uppercase tracking-wide text-brass-dark">{post.date}</p>
                 <h3 className="mt-2 font-display text-lg font-medium text-ink group-hover:text-brass-dark">

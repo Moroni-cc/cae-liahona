@@ -30,7 +30,7 @@ export function Footer() {
             <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-brass-light">Contacto</h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm">
               <li>hola@cae-liahona.edu</li>
-              <li>+51 962 000 000</li>
+              <li>+51 938 221 801</li>
               <li>Lun–Vie, 9:00–19:00</li>
             </ul>
           </div>

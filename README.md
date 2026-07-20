@@ -26,7 +26,7 @@ pnpm preview
 ## Estructura
 ```
 src/
-  components/   → Navbar, Footer, Layout, Newsletter, ui.jsx (botones, tarjetas...), Compass.jsx (ícono de marca)
+  components/   → Navbar, Footer, Layout, Newsletter, ui.jsx (botones, tarjetas...), Logo.jsx (ícono de marca)
   pages/        → Home, About, Services, Blog, BlogPost
   index.css     → tokens de diseño (colores, fuentes) vía @theme de Tailwind v4
   App.jsx       → rutas (react-router-dom)

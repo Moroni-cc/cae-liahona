@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "./ui";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 const links = [
   { to: "/", label: "Inicio" },
