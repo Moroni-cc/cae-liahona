@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "./ui";
+import logo from "../assets/logo.jpg";
 
 const links = [
   { to: "/", label: "Inicio" },
@@ -16,9 +17,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-parchment-line bg-parchment/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex items-center gap-2.5 font-display text-lg font-semibold text-ink">
-          <svg width="26" height="26" viewBox="0 0 24 24" className="text-brass-dark">
-            <path d="M12 2 L13.6 10.4 L22 12 L13.6 13.6 L12 22 L10.4 13.6 L2 12 L10.4 10.4 Z" fill="currentColor" />
-          </svg>
+          <img src={logo} alt="CAE-LIAHONA" className="h-8 w-8" />
           CAE-LIAHONA
         </NavLink>
 
@@ -28,8 +27,7 @@ export function Navbar() {
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors ${
-                  isActive ? "text-brass-dark" : "text-slate hover:text-ink"
+                `text-sm font-medium transition-colors ${isActive ? "text-brass-dark" : "text-slate hover:text-ink"
                 }`
               }
             >

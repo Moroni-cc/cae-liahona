@@ -5,17 +5,20 @@
   --font-body: "Inter", "Helvetica Neue", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
-  --color-ink: #16233F;
-  --color-ink-2: #1F3157;
-  --color-midnight: #0B1526;
-  --color-parchment: #F8F4EA;
-  --color-parchment-dim: #EFE7D6;
-  --color-parchment-line: #E2D8C2;
-  --color-brass: #B8863E;
-  --color-brass-light: #DDAE63;
-  --color-brass-dark: #8C6428;
-  --color-slate: #4A5470;
-  --color-mist: #9FACC9;
+  --color-ink: #0A2540;
+  --color-ink-2: #12355B;
+  --color-midnight: #05111F;
+
+  --color-parchment: #F8FBFF;
+  --color-parchment-dim: #EDF5FF;
+  --color-parchment-line: #D4E4FF;
+
+  --color-brass: #2563EB;
+  --color-brass-light: #3B82F6;
+  --color-brass-dark: #1E40AF;
+
+  --color-slate: #4B6A88;
+  --color-mist: #A7C3E8;
 }
 
 html {
@@ -33,14 +36,22 @@ body {
 }
 
 @keyframes cae-settle {
-  0%, 100% { transform: rotate(-4deg); }
-  50% { transform: rotate(3deg); }
+
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
