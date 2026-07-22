@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { Newsletter } from "../components/Newsletter";
-import { Eyebrow, SectionHeading } from "../components/ui";
+import { Eyebrow } from "../components/ui";
 
 export const posts = [
   {

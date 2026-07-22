@@ -11,8 +11,8 @@ export function Footer() {
               CAE-LIAHONA
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed">
-              Acompañamos a cada estudiante a encontrar su propio rumbo académico, con orientación
-              vocacional y planificación pensada para llegar a la universidad correcta.
+              Acompañamos a estudiantes de primaria y secundaria a descubrir su mejor versión,
+              fortaleciendo su aprendizaje, organizando sus hábitos de estudio y guiando su futuro paso a paso.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-brass-light">Contacto</h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm">
-              <li>hola@cae-liahona.edu</li>
+              <li>capchagomezr@gmail.com</li>
               <li>+51 938 221 801</li>
               <li>Lun–Vie, 9:00–19:00</li>
             </ul>

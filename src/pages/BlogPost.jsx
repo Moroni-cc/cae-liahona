@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { posts } from "./Blog";
 import { Button, Eyebrow, Stars } from "../components/ui";

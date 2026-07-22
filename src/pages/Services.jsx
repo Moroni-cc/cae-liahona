@@ -133,28 +133,73 @@ export default function Services() {
         <div className="mx-auto max-w-xl px-6 py-20">
           <SectionHeading align="center" eyebrow="Formulario de contacto" title="Cuéntanos sobre ti" />
           {sent ? (
-            <p className="mt-10 text-center font-mono text-sm text-brass-dark">
-              Gracias, recibimos tu mensaje. Te contactaremos en menos de 24 horas.
-            </p>
+            <div className="mt-10 text-center">
+              <p className="font-mono text-sm text-brass-dark">
+                ¡Gracias! Estamos redirigiéndote a WhatsApp para iniciar tu consulta.
+              </p>
+              <p className="mt-2 text-xs text-slate">
+                Si no se abre automáticamente, puedes escribirnos directamente a nuestro número.
+              </p>
+            </div>
           ) : (
             <form
               onSubmit={(e) => {
                 e.preventDefault();
+
+                // 1. Obtener datos del formulario de manera limpia
+                const data = new FormData(e.currentTarget);
+                const name = data.get("name");
+                const email = data.get("email");
+                const service = data.get("service");
+                const message = data.get("message") || "Sin comentarios adicionales";
+
+                // 2. Construir el mensaje de WhatsApp bien estructurado
+                const text = `¡Hola CAE-LIAHONA! 👋\n\nEstoy interesado en agendar una sesión de diagnóstico.\n\n*Mis Datos:*\n• *Nombre:* ${name}\n• *Correo:* ${email}\n• *Servicio de Interés:* ${service}\n\n*Mensaje:* ${message}`;
+
+                // 3. Crear enlace y abrir en nueva pestaña
+                const whatsappUrl = `https://wa.me/51938221801?text=${encodeURIComponent(text)}`;
+                window.open(whatsappUrl, "_blank");
+
+                // 4. Mostrar feedback de enviado en la interfaz
                 setSent(true);
               }}
               className="mt-10 flex flex-col gap-4"
             >
-              <input required placeholder="Nombre completo" className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none" />
-              <input required type="email" placeholder="Correo electrónico" className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none" />
-              <select required defaultValue="" className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none">
+              <input
+                required
+                name="name"
+                placeholder="Nombre completo"
+                className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none"
+              />
+              <input
+                required
+                name="email"
+                type="email"
+                placeholder="Correo electrónico"
+                className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none"
+              />
+              <select
+                required
+                name="service"
+                defaultValue=""
+                className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none"
+              >
                 <option value="" disabled>Servicio de interés</option>
                 {services.map((s) => (
-                  <option key={s.title}>{s.title}</option>
+                  <option key={s.title} value={s.title}>{s.title}</option>
                 ))}
               </select>
-              <textarea placeholder="Cuéntanos brevemente tu situación" rows={4} className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none" />
-              <button type="submit" className="mt-2 rounded-full bg-brass px-6 py-3 text-sm font-semibold text-midnight hover:bg-brass-light">
-                Enviar mensaje
+              <textarea
+                name="message"
+                placeholder="Cuéntanos brevemente tu situación"
+                rows={4}
+                className="rounded-xl border border-parchment-line bg-white/70 px-4 py-3 text-sm focus:border-brass focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="mt-2 rounded-full bg-brass px-6 py-3 text-sm font-semibold text-midnight hover:bg-brass-light"
+              >
+                Enviar mensaje por WhatsApp
               </button>
             </form>
           )}

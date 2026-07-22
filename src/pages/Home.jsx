@@ -41,22 +41,22 @@ const benefits = [
 
 const testimonials = [
   {
-    quote:
-      "Llegué sin saber qué estudiar y salí con una carrera elegida con criterio propio, no por presión de nadie.",
+    quote: "Llegué sin saber qué estudiar y salí con una carrera elegida con criterio propio, no por presión de nadie.",
     name: "María Fernanda R.",
     role: "Estudiante de Ingeniería",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120&h=120", // Foto temporal
   },
   {
-    quote:
-      "El plan trimestral le dio a mi hijo una estructura que en el colegio nunca tuvo. Se nota la diferencia.",
+    quote: "El plan trimestral le dio a mi hijo una estructura que en el colegio nunca tuvo. Se nota la diferencia.",
     name: "Jorge L.",
     role: "Padre de familia",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120", // Foto temporal
   },
   {
-    quote:
-      "La preparación para la entrevista de admisión fue clave. Llegué con confianza y respuestas pensadas.",
+    quote: "La preparación para la entrevista de admisión fue clave. Llegué con confianza y respuestas pensadas.",
     name: "Camila S.",
     role: "Estudiante de Medicina",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120&h=120", // Foto temporal
   },
 ];
 
@@ -162,11 +162,22 @@ export default function Home() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
-              <div key={t.name} className="rounded-2xl border border-white/10 bg-white/5 p-8">
-                <Stars />
-                <p className="mt-4 text-sm leading-relaxed text-parchment/90">“{t.quote}”</p>
-                <p className="mt-6 font-mono text-xs uppercase tracking-wide text-brass-light">{t.name}</p>
-                <p className="text-xs text-mist">{t.role}</p>
+              <div key={t.name} className="flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-8">
+                <div>
+                  <Stars />
+                  <p className="mt-4 text-sm leading-relaxed text-parchment/90">“{t.quote}”</p>
+                </div>
+                <div className="mt-6 flex items-center gap-4">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="h-10 w-10 rounded-full object-cover border border-white/10"
+                  />
+                  <div>
+                    <p className="font-mono text-xs uppercase tracking-wide text-brass-light">{t.name}</p>
+                    <p className="text-xs text-mist">{t.role}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
