@@ -5,19 +5,20 @@ import { Button, Eyebrow, SectionHeading, Stars } from "../components/ui";
 const pillars = [
   {
     bearing: "N 20°",
-    title: "Orientación vocacional y profesional",
-    text: "Descubre tus fortalezas e intereses reales con evaluaciones y conversaciones guiadas, antes de elegir una carrera.",
+    title: "Nivelación y Refuerzo Académico",
+    text: "Ayudamos a estudiantes de primaria y secundaria a superar vacíos en materias clave con explicaciones sencillas y a su ritmo.",
   },
   {
     bearing: "E 100°",
-    title: "Planificación académica estratégica",
-    text: "Trazamos un plan de estudio con metas trimestrales, para que cada esfuerzo tenga un rumbo claro.",
+    title: "Hábitos y Técnicas de Estudio",
+    text: "Enseñamos a planificar, organizar el tiempo y dominar métodos de estudio efectivos para lograr autonomía escolar.",
   },
   {
     bearing: "S 200°",
-    title: "Preparación para admisiones universitarias",
-    text: "Te acompañamos en exámenes de admisión, ensayos y entrevistas de las universidades que te interesan.",
+    title: "Desarrollo Integral y Orientación",
+    text: "Potenciamos la confianza del estudiante y, en grados superiores, le ayudamos a descubrir su perfil vocacional.",
   },
+
 ];
 
 const benefits = [
@@ -66,13 +67,12 @@ export default function Home() {
       <section className="relative overflow-hidden bg-midnight">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center md:py-32">
           <div>
-            <Eyebrow bearing="Rumbo 045°">Academia de asesoría académica</Eyebrow>
+            <Eyebrow bearing="Rumbo 045°">Asesoría Educativa Integral</Eyebrow>
             <h1 className="mt-6 font-display text-4xl font-medium leading-[1.1] text-parchment sm:text-5xl">
-              Tu camino hacia la excelencia académica comienza aquí
+              Descubre tu mejor versión académica
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-mist">
-              En CAE-LIAHONA convertimos la incertidumbre vocacional en un plan claro, con
-              asesores que caminan contigo desde la elección de carrera hasta la universidad.
+              En CAE-LIAHONA acompañamos a estudiantes de primaria y secundaria a superar retos, dominar hábitos de estudio y construir un futuro con confianza.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/servicios">Agenda una consulta gratuita</Button>
@@ -96,8 +96,8 @@ export default function Home() {
             align="center"
             eyebrow="Nuestra misión"
             bearing="N 000°"
-            title="Formamos estudiantes excepcionales"
-            description="Creemos que ningún estudiante debería elegir su futuro a ciegas. Por eso combinamos orientación vocacional, planificación académica y preparación para admisiones en un solo acompañamiento, con la Liahona como recordatorio de que todo rumbo necesita una guía confiable."
+            title="Nuestra misión"
+            description="Somos un equipo de asesores educativos con la única misión de descubrir tu mejor versión. Creemos que cada estudiante de primaria y secundaria tiene un potencial único que solo necesita la guía y las herramientas adecuadas para brillar."
           />
         </div>
       </section>

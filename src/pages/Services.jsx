@@ -4,46 +4,46 @@ import { Button, Card, Eyebrow, SectionHeading } from "../components/ui";
 const services = [
   {
     bearing: "N 020°",
-    title: "Asesoría académica personalizada",
-    text: "Sesiones individuales quincenales con un asesor fijo asignado durante todo el proceso.",
-    features: ["Diagnóstico inicial", "Plan de estudio a medida", "Informe de avance cada mes"],
+    title: "Nivelación y Refuerzo Escolar",
+    text: "Acompañamiento individual para comprender a fondo materias escolares críticas y mejorar el rendimiento académico.",
+    features: ["Diagnóstico de nivel académico", "Apoyo en tareas y preparación de exámenes", "Informes mensuales para la familia"],
   },
   {
     bearing: "E 090°",
-    title: "Orientación vocacional",
-    text: "Test de intereses, entrevistas guiadas y contraste con el mercado laboral real.",
-    features: ["Test vocacional certificado", "Sesión con la familia", "Mapa de carreras afines"],
+    title: "Métodos y Técnicas de Estudio",
+    text: "Enseñamos técnicas de concentración, esquematización, resúmenes y organización del tiempo escolar.",
+    features: ["Creación de rutinas de estudio", "Gestión del tiempo y organización semanal", "Herramientas contra la ansiedad de exámenes"],
   },
   {
     bearing: "S 180°",
-    title: "Preparación para exámenes de admisión",
-    text: "Simulacros cronometrados y retroalimentación específica por universidad objetivo.",
-    features: ["Banco de simulacros", "Corrección de ensayos", "Entrevistas simuladas"],
+    title: "Desarrollo Psicoeducativo",
+    text: "Acompañamiento enfocado en la autoestima escolar, manejo de la frustración y motivación por el aprendizaje.",
+    features: ["Sesiones individuales de consejería", "Potenciamiento de fortalezas", "Coordinación cercana con padres"],
   },
   {
     bearing: "O 270°",
-    title: "Técnicas de estudio y seguimiento escolar",
-    text: "Hábitos de estudio y organización semanal, con seguimiento directo a boletas y avances.",
-    features: ["Plan semanal de estudio", "Seguimiento de notas", "Alertas tempranas a la familia"],
+    title: "Orientación Vocacional y Pre-U",
+    text: "Para los grados superiores de secundaria, brindamos test vocacionales y preparación inicial para el salto universitario.",
+    features: ["Test de intereses y aptitudes", "Exploración del perfil profesional", "Simulacros de admisión graduales"],
   },
 ];
 
 const faqs = [
   {
-    q: "¿Cómo empieza el proceso de asesoría?",
-    a: "Con una sesión de diagnóstico gratuita donde identificamos el punto de partida y armamos un plan de trabajo junto al estudiante y su familia.",
+    q: "¿A partir de qué grado escolar reciben alumnos?",
+    a: "Acompañamos a estudiantes desde primaria (generalmente a partir de los 8 años) hasta el final de la secundaria y preparación preuniversitaria.",
   },
   {
-    q: "¿Las sesiones son presenciales o virtuales?",
-    a: "Ambas modalidades están disponibles. La mayoría de nuestros estudiantes combina sesiones presenciales mensuales con seguimiento virtual quincenal.",
+    q: "¿Cómo ayudan a un estudiante con baja motivación o frustración?",
+    a: "A través de nuestro enfoque psicoeducativo. Evaluamos qué bloquea su aprendizaje, diseñamos metas pequeñas que pueda alcanzar rápido para recuperar la confianza, y le enseñamos métodos adaptados a su estilo de aprendizaje.",
   },
   {
-    q: "¿Trabajan con estudiantes de todos los grados?",
-    a: "Sí, adaptamos el acompañamiento desde tercero de secundaria hasta el primer ciclo universitario.",
+    q: "¿Las sesiones son grupales o individuales?",
+    a: "Son 100% personalizadas. Cada estudiante trabaja de manera individual con un asesor asignado para asegurar un ritmo y un enfoque adaptados exclusivamente a sus necesidades.",
   },
   {
-    q: "¿Qué pasa si cambio de carrera a mitad del proceso?",
-    a: "Es parte normal del proceso vocacional. Ajustamos el plan sin costo adicional dentro del mismo periodo contratado.",
+    q: "¿Cómo se mantiene informada a la familia?",
+    a: "Emitimos informes mensuales de avance y mantenemos una comunicación directa y constante con los padres de familia para coordinar esfuerzos en el hogar.",
   },
 ];
 

@@ -16,12 +16,10 @@ export default function About() {
         <div className="mx-auto max-w-3xl px-6 py-24 text-center">
           <Eyebrow bearing="Rumbo 000°">Sobre nosotros</Eyebrow>
           <h1 className="mt-6 font-display text-4xl font-medium text-parchment sm:text-5xl">
-            Una brújula para quienes aún no saben su norte
+            Una brújula para descubrir el potencial de cada estudiante
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-mist">
-            CAE-LIAHONA nació de una pregunta simple: ¿por qué tantos estudiantes eligen carrera
-            sin haberse conocido primero a sí mismos? Desde entonces trabajamos para que cada
-            decisión académica tenga un rumbo, no una corazonada.
+            CAE-LIAHONA nace con la convicción de que el colegio no debe ser un espacio de frustración, sino una etapa para descubrir fortalezas, desarrollar autonomía y formar una base sólida para el futuro.
           </p>
         </div>
       </section>
@@ -31,8 +29,8 @@ export default function About() {
           <div>
             <SectionHeading
               eyebrow="Nuestra historia"
-              title="Una guía, no un examen más"
-              description="Fundada en 2014 por un grupo de psicólogos educativos y ex-comités de admisión, la academia toma su nombre de la Liahona: un instrumento de navegación que respondía según la fe y el esfuerzo de quien lo llevaba. Así entendemos la asesoría: una herramienta que solo funciona si el estudiante se involucra en su propio proceso."
+              title="Acompañando el crecimiento escolar"
+              description="Inspirados en la Liahona (un instrumento de guía y orientación), creamos este espacio para ir más allá de la memorización escolar tradicional. Nos enfocamos en el alumno como un todo, combinando el soporte académico con herramientas emocionales y organizativas que sirvan para toda la vida."
             />
             <div className="mt-6">
               <Button href="/servicios" variant="dark">Ver servicios</Button>
