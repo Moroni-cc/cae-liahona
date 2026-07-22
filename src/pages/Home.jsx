@@ -139,7 +139,7 @@ export default function Home() {
               </h3>
               <p className="mt-4 max-w-md text-slate leading-relaxed">{benefit.text}</p>
               <div className="mt-6">
-                <Button href="/servicios" variant="dark">
+                <Button href="/sobre-nosotros" variant="dark">
                   Conocer más
                 </Button>
               </div>
