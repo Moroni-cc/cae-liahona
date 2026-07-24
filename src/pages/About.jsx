@@ -7,7 +7,7 @@ const team = [
   { name: "Sofía Chávez", role: "Asesora de admisiones", bio: "Ex-comité de admisión, experta en ensayos y entrevistas universitarias." },
 ];
 
-const clients = ["Colegio San Marcos", "Instituto Los Andes", "Colegio Newton", "Liceo del Sur"];
+const clients = ["IEU Weisheit School", "Santa Maria de Fatima", "Colegio Von Neumann"];
 
 export default function About() {
   return (
